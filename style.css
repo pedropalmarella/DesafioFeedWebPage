@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Fira code", monospace;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #DDD;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+  color: #FFF;
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 40px;
+  top: 0;
+  position: sticky;
+  z-index: 10;
+}
+
+.container {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+  padding: 0 15px;
+}
+
+.head-feed {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.head-feed:hover {
+  color: red;
+}
+
+.head-feed img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: transform 0.7s ease;
+}
+
+.head-feed img:hover {
+  transform: scale(1.2);
+}
+
+.head-feed h2 {
+  font-size: 22px;
+}
+
+.head-feed h2:hover {
+  user-select: none;
+}
+
+.feed-img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 7px;
+  transition: transform 0.7s ease;
+}
+
+.feed-img:hover {
+  transform: scale(1.05);
+  cursor: cell;
+}
+
+.interact-buttons {
+  margin: 8px 0;
+}
+.interact-buttons img{
+  width: 10px;
+  height: 10px;
+}
+
+a {
+  text-decoration: underline;
+  color: #121212;
+  margin-right: 5px;
+}
+
+a:hover {
+  color: red;
+}
